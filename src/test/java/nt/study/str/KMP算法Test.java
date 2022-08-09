@@ -14,4 +14,12 @@ public class KMP算法Test {
         System.out.println(kmp);
     }
 
+    @Test
+    public void testKMPOptimization(){
+        String str1 = "aaabaaaab";
+        String str2 = "aaaab";
+        int kmp = new 优化后的KMP算法().KMP(str1, str2);
+        System.out.println(kmp);
+    }
+
 }
