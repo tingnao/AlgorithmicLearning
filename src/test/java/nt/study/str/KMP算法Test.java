@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+/**
+ * KMP相关测试类
+ */
 public class KMP算法Test {
 
     @Test

@@ -6,6 +6,9 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
+/**
+ * 排序相关测试类
+ */
 public class SortTest {
 
 
@@ -14,7 +17,7 @@ public class SortTest {
      */
     @Test
     public void testSelectSort() {
-        int[] ints1 = {1, 4, 7, 3, 5, 0, 0};
+        int[] ints1 = {1, 4, 7, 3, 5, 5, 0, 0};
         // 选择排序
         long start = System.currentTimeMillis();
         new SelectSort().sort(ints1);
@@ -68,7 +71,7 @@ public class SortTest {
     @Test
     public void testFastSort() {
         // 快速排序
-        int[] ints5 = {1, 9, 7, 3, 5, 0, 2};
+        int[] ints5 = {1, 9, 7, 3, 5, 0, 5, 2};
         new QuickSort().sort(ints5);
         System.out.println("快速排序后结果为：");
         System.out.println(Arrays.toString(ints5));
