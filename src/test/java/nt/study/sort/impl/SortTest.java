@@ -1,4 +1,4 @@
-package nt.study.sort;
+package nt.study.sort.impl;
 
 
 import nt.study.sort.impl.*;

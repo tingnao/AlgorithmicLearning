@@ -1,5 +1,6 @@
 package nt.study.str;
 
+import nt.study.sort.impl.InsertSort;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
