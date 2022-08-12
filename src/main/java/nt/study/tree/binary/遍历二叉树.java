@@ -15,9 +15,6 @@ public class 遍历二叉树{
      */
     public <K> String preorderTraversal(BinaryTree<K> root){
         if(!Objects.isNull(root)){
-//            System.out.println(root.getValue());
-//            this.preorderTraversal(root.getLeft());
-//            this.preorderTraversal(root.getRight());
             return root.getValue() + this.preorderTraversal(root.getLeft()) + this.preorderTraversal(root.getRight());
         }
         return "";
@@ -31,7 +28,6 @@ public class 遍历二叉树{
     public <K> String inorderTraversal(BinaryTree<K> root){
         if(!Objects.isNull(root)){
             return this.inorderTraversal(root.getLeft()) + root.getValue() +  this.inorderTraversal(root.getRight());
-//            System.out.println();
         }
         return "";
     }
