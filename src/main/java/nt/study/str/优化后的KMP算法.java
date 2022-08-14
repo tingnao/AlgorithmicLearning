@@ -49,7 +49,7 @@ public class 优化后的KMP算法 {
                     nextVal[j] = nextVal[k];
                 }
             } else
-                j = nextVal[j];
+                k = nextVal[k];
         }
         System.out.println(Arrays.toString(nextVal));
     }

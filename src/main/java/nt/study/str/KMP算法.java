@@ -30,7 +30,7 @@ public class KMP算法 {
         }
     }
 
-    private void getNext(int[] next, String m) {
+    private static void getNext(int[] next, String m) {
         // next数组首位置-1
         next[0] = -1;
         // j表示后指针，k的值表示字符串m前j个字符中（0~k-1)范围内的字符与(j-k, j-1)相等，当m中第i个字符不匹配时，可以通过回溯到第k个位置继续进行匹配，避免了重复比较
@@ -47,5 +47,11 @@ public class KMP算法 {
         }
 
         System.out.println(Arrays.toString(next));
+    }
+
+    public static void main(String[] args) {
+        int[] next = new int[5];
+        String str = "ababc";
+        getNext(next, str);
     }
 }
