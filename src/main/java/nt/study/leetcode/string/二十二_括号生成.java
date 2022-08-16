@@ -20,7 +20,7 @@ public class 二十二_括号生成 {
         // 调用自己写的回溯
         backTrack(lists,  n, n, "");
         // 调用官方编写的回溯
-        backTrack(lists, 0, 0, n, new StringBuilder());
+       // backTrack(lists, 0, 0, n, new StringBuilder());
         return lists;
     }
 
@@ -40,7 +40,7 @@ public class 二十二_括号生成 {
             // 添加右括号
             backTrack(lists, leftNum, rightNum - 1, str + ")");
         }
-        if((leftNum > 0 && rightNum > 0 &&leftNum <= rightNum) || (rightNum == 0 && leftNum > 0)){
+        if((leftNum > 0 && rightNum > 0 &&leftNum <= rightNum) ){
             // 添加左括号
             backTrack(lists, leftNum - 1, rightNum, str + "(");
         }
@@ -71,7 +71,7 @@ public class 二十二_括号生成 {
     }
 
     public static void main(String[] args) {
-        List<String> strings = generateParenthesis(2);
+        List<String> strings = generateParenthesis(3);
         System.out.println(strings);
     }
 }
